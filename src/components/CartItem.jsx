@@ -16,7 +16,7 @@ const CartItem = ({ cartItem }) => {
   const handleRemove = (id) => {
     dispatch(remove(id));
   };
-
+  console.log(cartItem);
   return (
     <Card sx={{ margin: "20px 0px" }}>
       <CardMedia sx={{ height: 100 }} image={cartItem?.image?.large} />
@@ -25,7 +25,7 @@ const CartItem = ({ cartItem }) => {
           {cartItem?.name}
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
-          ${cartItem?.market_data?.current_price?.usd}
+          $ {cartItem?.market_data?.current_price?.usd}
         </Typography>
       </CardContent>
       <CardActions>

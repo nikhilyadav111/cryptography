@@ -54,13 +54,13 @@ const CoinDetails = () => {
           title="green iguana"
         />
         <Typography variant="h2" sx={{ margin: "10px 0px" }}>
-          Coin Price : ${coin?.market_data.current_price.usd}
+          Coin Price : ${coin?.market_data?.current_price?.usd}
         </Typography>
         <Typography variant="h4" sx={{ margin: "10px 0px" }}>
           Coin Name : {coin?.name}
         </Typography>
         <Typography variant="h5" sx={{ margin: "10px 0px" }}>
-          Coin Description : {coin?.description.en}
+          Coin Description : {coin?.description?.en}
         </Typography>
         <Button
           onClick={() => handleAdd(coin)}
